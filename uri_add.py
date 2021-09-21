@@ -20,7 +20,7 @@ elif platform.startswith('linux'):
     scr_name = abspath('decoder.py')
 
     home_dir = Path.home()
-    entry = f"[Desktop Entry]\nType=Application\nName=SPWN Scheme Handler\nExec={py_path}/python3 {scr_name} %u\nStartupNotify=false\nMimeType=x-scheme-handler/spwn;"
+    entry = f"[Desktop Entry]\nTerminal=true\nType=Application\nName=SPWN Scheme Handler\nExec={py_path}/python3 {scr_name} %u\nStartupNotify=true\nMimeType=x-scheme-handler/spwn;"
     file = open(f'{home_dir}/.local/share/applications/spwn-handler.desktop', 'w')
     file.write(entry)
     file.close()
