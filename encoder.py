@@ -29,7 +29,7 @@ try:
             print("File not found.")
             pass
     else:
-        output = f"spwn://{quote(abspath(argv[1]))}{c}{l}{o}"
+        output = f"spwn://{quote(abspath(argv[1]))}?{c}{l}{o}"
 except IndexError:
     pass
 if output is not None:
